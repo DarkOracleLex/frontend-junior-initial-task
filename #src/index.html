@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>gulp-template</title>
+</head>
+
+<body>
+  <div class="body-wrap">
+    <div class="header-main-wrap">
+      @@include("_header.html")
+      @@include("_main.html")
+    </div>
+    @@include("_footer.html")
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

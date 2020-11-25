@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header__logo {
+  align-self: center;
+}
+
+.header__nav-reg-wrap {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__reg {
+  text-align: right;
+}
+
+.header__reg-btn {
+  margin-right: 18px;
+
+  font-size: 1.4rem;
+}
+
+.header__nav {
+  display: flex;
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.header__nav-item {
+  margin-left: 25px;
+
+  list-style-type: none;
+
+  &:hover {
+    font-weight: 600;
+  }
+  &:active {
+    font-weight: 600;
+  }
+}

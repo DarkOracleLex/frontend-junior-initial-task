@@ -1,0 +1,40 @@
+@import "vendor/normalize.scss";
+@import "_vars.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background;
+
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  color: $white;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $active;
+  }
+  &:active {
+    color: $active;
+  }
+}
+
+.header-main-wrap {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@import "blocks/header.scss";
+@import "blocks/main.scss";
