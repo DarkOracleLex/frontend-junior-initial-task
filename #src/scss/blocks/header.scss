@@ -1,16 +1,28 @@
 .header {
   display: flex;
-  justify-content: space-between;
   padding: 0 20px;
 }
 
 .header__logo {
   align-self: center;
+
+  @media (max-width: 815px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
 }
 
 .header__nav-reg-wrap {
-  flex-direction: column;
+  margin-left: auto;
+
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -19,7 +31,7 @@
 }
 
 .header__reg-btn {
-  margin-right: 18px;
+  margin-right: 1.8rem;
 
   font-size: 1.4rem;
 }
@@ -33,14 +45,12 @@
 }
 
 .header__nav-item {
-  margin-left: 25px;
+  margin-left: 2.5rem;
 
   list-style-type: none;
 
-  &:hover {
-    font-weight: 600;
-  }
-  &:active {
-    font-weight: 600;
+  @media (max-width: 815px) {
+    margin-left: 1.5rem;
+    font-size: 1.6rem;
   }
 }

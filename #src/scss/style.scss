@@ -1,6 +1,17 @@
 @import "vendor/normalize.scss";
 @import "_vars.scss";
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 *,
 *::before,
 *::after {
@@ -13,6 +24,8 @@ html {
 
 body {
   background-color: $background;
+
+  min-width: 44rem;
 
   font-size: 1.8rem;
   font-family: "Open Sans", sans-serif;
