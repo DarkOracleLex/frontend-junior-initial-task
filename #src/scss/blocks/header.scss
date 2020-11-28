@@ -1,6 +1,15 @@
 .header {
   display: flex;
+  justify-content: space-between;
   padding: 0 20px;
+  margin: 0 auto;
+
+  max-width: 1200px;
+  width: 100%;
+
+  @media (max-width: 815px) {
+    flex-direction: row-reverse;
+  }
 }
 
 .header__logo {
@@ -19,8 +28,6 @@
 }
 
 .header__nav-reg-wrap {
-  margin-left: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,4 +60,9 @@
     margin-left: 1.5rem;
     font-size: 1.6rem;
   }
+}
+
+.header__nav-item--current a {
+  font-weight: 600;
+  color: $active;
 }
