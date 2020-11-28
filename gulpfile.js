@@ -76,7 +76,6 @@ function css(params) {
     .pipe(
       scss({ outputStyle: "expanded" })
     )
-    .pipe(gcmq())
     .pipe(
       autoprefixer({
         overrideBrowserslist: [
@@ -86,6 +85,7 @@ function css(params) {
       })
     )
     .pipe(webpcss({}))
+    .pipe(gcmq())
     .pipe(dest(path.build.css))
     .pipe(cleanCSS())
     .pipe(
