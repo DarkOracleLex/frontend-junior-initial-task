@@ -1,17 +1,6 @@
 @import "vendor/normalize.scss";
 @import "_vars.scss";
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 *,
 *::before,
 *::after {
@@ -49,3 +38,4 @@ a {
 
 @import "blocks/header.scss";
 @import "blocks/main.scss";
+@import "vendor/visually-hidden.scss";

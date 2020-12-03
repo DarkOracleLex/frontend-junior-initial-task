@@ -382,17 +382,6 @@ template {
   display: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 *,
 *::before,
 *::after {
@@ -508,6 +497,7 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .main__inner {
@@ -527,23 +517,29 @@ a:active {
 }
 
 .main__text {
+  position: relative;
   max-width: 510px;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
   background-color: #fff;
+  opacity: 0.85;
   padding: 20px 0 20px 20px;
 }
 
-.main__text-stript-continuation {
+.main__text::before {
+  content: "";
   position: absolute;
   height: 100%;
-  background-color: #fff;
+  width: 4000px;
   top: 0;
-  left: 0;
+  left: 510px;
+  background-color: #fff;
 }
 
 .main__title {
+  position: relative;
+  z-index: 1000;
   margin: 0;
   color: #000;
   font-size: 3rem;
@@ -555,6 +551,8 @@ a:active {
 }
 
 .main__description {
+  position: relative;
+  z-index: 1000;
   margin: 0;
   margin-top: 15px;
   color: #000;
@@ -585,7 +583,7 @@ a:active {
   background-color: #fff;
 }
 
-.main__button {
+.main__pull-out-menu-button {
   display: block;
   border: none;
   margin: 0 auto;
@@ -593,9 +591,10 @@ a:active {
   width: 84px;
   height: 30px;
   background-color: #fff;
+  cursor: pointer;
 }
 
-.main__button::after {
+.main__pull-out-menu-button::after {
   content: "";
   position: absolute;
   background-image: url(../img/arrow.svg);
@@ -611,12 +610,33 @@ a:active {
   top: 0;
 }
 
+.main__pull-out-menu-button-down {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .main__pull-out-menu {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  bottom: -1000px;
+}
+
+.main__pull-out-menu--active {
+  position: relative;
+  bottom: 0;
+  -webkit-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 
 .main__pull-out-menu-item {
@@ -629,15 +649,15 @@ a:active {
   flex-grow: 1;
 }
 
-.main__pull-out-menu-item:nth-child(1) {
+.main__pull-out-menu-item:nth-child(2) {
   background-color: #e2d1a6;
 }
 
-.main__pull-out-menu-item:nth-child(2) {
+.main__pull-out-menu-item:nth-child(3) {
   background-color: #fff;
 }
 
-.main__pull-out-menu-item:nth-child(3) {
+.main__pull-out-menu-item:nth-child(4) {
   background-color: #000;
   color: #fff;
 }
@@ -649,6 +669,17 @@ a:active {
 .main__pull-out-menu-item-description {
   margin: 0;
   margin-top: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .webp .main {
