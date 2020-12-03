@@ -1,0 +1,99 @@
+.footer {
+  background-color: $background;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.footer__top-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 130px;
+  margin-left: 140px;
+  justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    margin: 0 20px;
+  }
+}
+
+.footer__top-section-item {
+  margin: 0;
+  flex-basis: 190px;
+
+  @media (max-width: 1101px) {
+    flex-basis: 20%;
+  }
+
+  @media (max-width: 1023px) {
+    flex-basis: 45%;
+  }
+
+  @media (max-width: 501px) {
+    flex-basis: 90%;
+    margin: 0 auto;
+  }
+}
+
+.footer__top-section-item-header {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.footer__top-section-item-text {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 17px;
+}
+
+.footer__form {
+  margin-top: 20px;
+}
+
+.footer__form-input {
+  border: none; //цвет рамки
+  border-radius: none; //закругление углов (общее)
+  background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+  outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+  width: 100%; // ширина на свое усмотрение
+  color: $input-color; //цвет шрифта в обычном состоянии
+  font-size: 1.4rem; // Размер шрифта
+  font-weight: 300;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+
+.footer__form-input-email {
+  margin-top: 12px;
+}
+
+.footer__form-input-checkbox {
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.footer__form-label-checkbox {
+  font-size: 1rem;
+  vertical-align: middle;
+  color: $checkbox-color;
+}
+
+.footer__form-btn {
+  background-color: $black;
+  color: $white;
+  font-size: 1.8rem;
+  margin-top: 8px;
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
