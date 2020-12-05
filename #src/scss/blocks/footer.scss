@@ -25,7 +25,8 @@
   flex-basis: 190px;
 
   @media (max-width: 1101px) {
-    flex-basis: 20%;
+    flex-basis: 40%;
+    margin-top: 20px;
   }
 
   @media (max-width: 1023px) {
@@ -34,7 +35,8 @@
 
   @media (max-width: 501px) {
     flex-basis: 90%;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -177,11 +179,27 @@
 }
 
 .footer__bot-section-language-item {
+  position: relative;
   font-size: 1.4rem;
   margin-top: 30px;
   margin-right: 18px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: $white;
+
+    right: -10px;
+    top: 2px;
+    bottom: 2px;
+  }
+
   &:nth-last-child(1) {
     margin-right: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
