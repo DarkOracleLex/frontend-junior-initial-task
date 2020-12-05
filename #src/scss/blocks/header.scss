@@ -67,10 +67,13 @@
 
 .header__nav-item {
   margin-left: 2.5rem;
-
   line-height: 2;
-
   list-style-type: none;
+  position: relative;
+
+  &:hover .header__nav-subnav {
+    display: block;
+  }
 
   @media (max-width: 815px) {
     margin-left: 1.5rem;
@@ -81,4 +84,22 @@
 .header__nav-item--current a {
   font-weight: 600;
   color: $active;
+}
+
+.header__nav-subnav {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  background-color: $background;
+  top: 100%;
+  left: -15px;
+  right: -60px;
+  padding-left: 15px;
+  padding-top: 20px;
+
+  z-index: 1000;
+}
+
+.header__nav-subitem {
+  font-size: 1.6rem;
 }

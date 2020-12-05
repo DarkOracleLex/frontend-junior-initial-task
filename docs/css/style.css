@@ -493,11 +493,33 @@ a:active {
   margin-left: 2.5rem;
   line-height: 2;
   list-style-type: none;
+  position: relative;
+}
+
+.header__nav-item:hover .header__nav-subnav {
+  display: block;
 }
 
 .header__nav-item--current a {
   font-weight: 600;
   color: #e2d1a6;
+}
+
+.header__nav-subnav {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  background-color: #353436;
+  top: 100%;
+  left: -15px;
+  right: -60px;
+  padding-left: 15px;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.header__nav-subitem {
+  font-size: 1.6rem;
 }
 
 .main {
