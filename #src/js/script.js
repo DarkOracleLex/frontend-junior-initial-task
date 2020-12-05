@@ -1,4 +1,6 @@
+"use strict";
 // Для изображений
+
 function testWebP(callback) {
   var webP = new Image();
   webP.onload = webP.onerror = function () {
@@ -69,3 +71,25 @@ menuButtonDown.addEventListener(
     );
   }
 );
+
+//IE браузер фиксы
+
+function isInternetExplorer() {
+  return (
+    window.navigator.userAgent.indexOf(
+      "MSIE "
+    ) > -1 ||
+    window.navigator.userAgent.indexOf(
+      "Trident/"
+    ) > -1
+  );
+}
+
+const headerMainWrap = document.querySelector(
+  ".header-main-wrap"
+);
+if (isInternetExplorer() === true) {
+  headerMainWrap.style.height = "100vh";
+  headerMainWrap.style.minHeight =
+    "700px";
+}

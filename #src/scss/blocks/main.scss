@@ -22,6 +22,7 @@
   position: relative;
   max-width: 500px;
   margin-left: auto;
+  align-self: flex-end;
   margin-top: auto;
   margin-bottom: auto;
 
@@ -142,11 +143,12 @@
   position: fixed;
   display: flex;
   flex-wrap: wrap;
-  bottom: -1000px;
+  bottom: -4000px;
 
   &--active {
     position: relative;
     bottom: 0;
+    left: 0px;
     transition: 1s ease-out;
   }
 }

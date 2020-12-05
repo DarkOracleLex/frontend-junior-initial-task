@@ -520,6 +520,8 @@ a:active {
   position: relative;
   max-width: 500px;
   margin-left: auto;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   margin-top: auto;
   margin-bottom: auto;
   background-color: #fff;
@@ -632,12 +634,13 @@ a:active {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  bottom: -1000px;
+  bottom: -4000px;
 }
 
 .main__pull-out-menu--active {
   position: relative;
   bottom: 0;
+  left: 0px;
   -webkit-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;

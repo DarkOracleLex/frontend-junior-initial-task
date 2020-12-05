@@ -50,7 +50,8 @@ const { src, dest } = require("gulp"),
   imagemin = require("gulp-imagemin"),
   webp = require("gulp-webp"),
   webpHTML = require("gulp-webp-html"),
-  webpcss = require("gulp-webpcss");
+  webpcss = require("gulp-webpcss"),
+  babel = require("gulp-babel");
 
 function browserSync(params) {
   browsersync.init({
@@ -98,6 +99,11 @@ function css(params) {
 function js(params) {
   return src(path.src.js)
     .pipe(fileinclude())
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(
