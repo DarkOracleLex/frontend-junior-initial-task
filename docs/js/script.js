@@ -30,9 +30,11 @@ menuButtonUp.addEventListener("click", function () {
 });
 menuButtonDown.addEventListener("click", function () {
   menu.classList.toggle("main__pull-out-menu--active");
-  dots.classList.toggle("visually-hidden");
-  menuButtonUp.classList.toggle("visually-hidden");
-  menuButtonDown.classList.toggle("visually-hidden");
+  setTimeout(function () {
+    dots.classList.toggle("visually-hidden");
+    menuButtonUp.classList.toggle("visually-hidden");
+    menuButtonDown.classList.toggle("visually-hidden");
+  }, 1000);
 }); //IE браузер фиксы
 
 function isInternetExplorer() {

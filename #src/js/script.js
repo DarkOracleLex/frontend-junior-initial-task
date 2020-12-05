@@ -60,15 +60,17 @@ menuButtonDown.addEventListener(
     menu.classList.toggle(
       "main__pull-out-menu--active"
     );
-    dots.classList.toggle(
-      "visually-hidden"
-    );
-    menuButtonUp.classList.toggle(
-      "visually-hidden"
-    );
-    menuButtonDown.classList.toggle(
-      "visually-hidden"
-    );
+    setTimeout(function () {
+      dots.classList.toggle(
+        "visually-hidden"
+      );
+      menuButtonUp.classList.toggle(
+        "visually-hidden"
+      );
+      menuButtonDown.classList.toggle(
+        "visually-hidden"
+      );
+    }, 1000);
   }
 );
 

@@ -514,6 +514,7 @@ a:active {
 }
 
 .main__inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,22 +642,23 @@ a:active {
 }
 
 .main__pull-out-menu {
-  position: fixed;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  bottom: -4000px;
-}
-
-.main__pull-out-menu--active {
-  position: relative;
-  bottom: 0;
-  left: 0px;
+  bottom: -200px;
   -webkit-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
+  height: 0;
+}
+
+.main__pull-out-menu--active {
+  height: 100%;
+  bottom: 0;
+  left: 0px;
 }
 
 .main__pull-out-menu-item {

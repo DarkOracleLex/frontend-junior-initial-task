@@ -9,6 +9,7 @@
 }
 
 .main__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,16 +141,16 @@
 }
 
 .main__pull-out-menu {
-  position: fixed;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  bottom: -4000px;
-
+  bottom: -200px;
+  transition: 1s ease-out;
+  height: 0;
   &--active {
-    position: relative;
+    height: 100%;
     bottom: 0;
     left: 0px;
-    transition: 1s ease-out;
   }
 }
 
