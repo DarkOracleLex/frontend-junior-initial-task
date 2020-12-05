@@ -38,9 +38,22 @@
 }
 
 .header__reg-btn {
+  position: relative;
   margin-right: 1.8rem;
 
   font-size: 1.4rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: -20px;
+    width: 10px;
+    background-image: url("../img/regist.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .header__nav {
