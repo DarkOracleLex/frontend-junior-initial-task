@@ -95,3 +95,33 @@ if (isInternetExplorer() === true) {
   headerMainWrap.style.minHeight =
     "700px";
 }
+
+// popup
+
+const headerRegBtn = document.querySelector(
+    ".header__reg-btn"
+  ),
+  popup = document.querySelector(
+    ".popup-wrap"
+  ),
+  popupClose = document.querySelector(
+    ".popup__close"
+  );
+
+headerRegBtn.addEventListener(
+  "click",
+  () => {
+    popup.classList.toggle(
+      "visually-hidden"
+    );
+  }
+);
+
+popupClose.addEventListener(
+  "click",
+  () => {
+    popup.classList.toggle(
+      "visually-hidden"
+    );
+  }
+);

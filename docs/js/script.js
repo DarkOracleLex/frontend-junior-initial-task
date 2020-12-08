@@ -46,4 +46,15 @@ var headerMainWrap = document.querySelector(".header-main-wrap");
 if (isInternetExplorer() === true) {
   headerMainWrap.style.height = "100vh";
   headerMainWrap.style.minHeight = "700px";
-}
+} // popup
+
+
+var headerRegBtn = document.querySelector(".header__reg-btn"),
+    popup = document.querySelector(".popup-wrap"),
+    popupClose = document.querySelector(".popup__close");
+headerRegBtn.addEventListener("click", function () {
+  popup.classList.toggle("visually-hidden");
+});
+popupClose.addEventListener("click", function () {
+  popup.classList.toggle("visually-hidden");
+});

@@ -1,0 +1,181 @@
+.popup-wrap {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.6);
+  top: 0;
+  left: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: $background;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 15px;
+  padding-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.popup__close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.popup__close:before,
+.popup__close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: $white;
+}
+
+.popup__close:before {
+  transform: rotate(45deg);
+}
+
+.popup__close:after {
+  transform: rotate(-45deg);
+}
+
+.popup__header {
+  margin: 0;
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.popup__login-form {
+  flex-basis: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__login-header {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+
+  margin: 0;
+  margin-top: 30px;
+}
+
+.popup__login-form-label {
+  margin-top: 8px;
+
+  &:nth-of-type(1) {
+    margin-top: 15px;
+  }
+}
+
+.popup__login-form-input {
+  border: none; //цвет рамки
+  border-radius: none; //закругление углов (общее)
+  background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+  outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+  width: 100%; // ширина на свое усмотрение
+  color: $input-color; //цвет шрифта в обычном состоянии
+  font-size: 1.4rem; // Размер шрифта
+  font-weight: 300;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+
+.popup__login-form-btn {
+  background-color: $black;
+  color: $white;
+  font-size: 1.8rem;
+  margin-top: 8px;
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__login-form-reset-pass {
+  font-size: 1.2rem;
+  color: $checkbox-color;
+
+  margin-top: 10px;
+}
+
+.popup__registration-form {
+  flex-basis: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__registration-header {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+
+  margin: 0;
+  margin-top: 30px;
+}
+
+.popup__registration-form-label {
+  margin-top: 8px;
+
+  &:nth-of-type(1) {
+    margin-top: 15px;
+  }
+}
+
+.popup__registration-form-input {
+  border: none; //цвет рамки
+  border-radius: none; //закругление углов (общее)
+  background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+  outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+  width: 100%; // ширина на свое усмотрение
+  color: $input-color; //цвет шрифта в обычном состоянии
+  font-size: 1.4rem; // Размер шрифта
+  font-weight: 300;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+
+.popup__registration-form-btn {
+  background-color: $black;
+  color: $white;
+  font-size: 1.8rem;
+  margin-top: 8px;
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__registration-form-checkbox {
+  margin-top: 10px;
+}
+
+.popup__registration-form-label-checkbox {
+  font-size: 1.2rem;
+  color: $checkbox-color;
+
+  text-align: center;
+  vertical-align: middle;
+
+  margin: 0;
+}
