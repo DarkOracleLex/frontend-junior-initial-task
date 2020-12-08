@@ -145,20 +145,20 @@ dotsItem1.addEventListener(
   "click",
   () => {
     main.style.backgroundImage =
-      "url('../img/bg-pic-1.jpg')";
+      "url('img/bg-pic-1.jpg')";
   }
 );
 dotsItem2.addEventListener(
   "click",
   () => {
     main.style.backgroundImage =
-      "url('../img/bg-pic-2.jpg')";
+      "url('img/bg-pic-2.jpg')";
   }
 );
 dotsItem3.addEventListener(
   "click",
   () => {
     main.style.backgroundImage =
-      "url('../img/bg-pic-3.jpg')";
+      "url('img/bg-pic-3.jpg')";
   }
 );

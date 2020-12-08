@@ -64,11 +64,11 @@ var dotsItem1 = document.querySelector(".main__dots-item-1"),
     dotsItem3 = document.querySelector(".main__dots-item-3"),
     main = document.querySelector(".main");
 dotsItem1.addEventListener("click", function () {
-  main.style.backgroundImage = "url('../img/bg-pic-1.jpg')";
+  main.style.backgroundImage = "url('img/bg-pic-1.jpg')";
 });
 dotsItem2.addEventListener("click", function () {
-  main.style.backgroundImage = "url('../img/bg-pic-2.jpg')";
+  main.style.backgroundImage = "url('img/bg-pic-2.jpg')";
 });
 dotsItem3.addEventListener("click", function () {
-  main.style.backgroundImage = "url('../img/bg-pic-3.jpg')";
+  main.style.backgroundImage = "url('img/bg-pic-3.jpg')";
 });
