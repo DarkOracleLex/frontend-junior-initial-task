@@ -533,9 +533,9 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: background-image 0.5s;
-  -o-transition: background-image 0.5s;
-  transition: background-image 0.5s;
+  -webkit-transition: background-image 1s;
+  -o-transition: background-image 1s;
+  transition: background-image 1s;
 }
 
 .main__inner {
@@ -796,7 +796,7 @@ a:active {
 
 .footer__form-input {
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background: #ffffff !important;
   outline: none;
   width: 100%;
@@ -1025,7 +1025,7 @@ a:active {
 
 .popup__login-form-input {
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background: #ffffff !important;
   outline: none;
   width: 100%;
@@ -1084,7 +1084,7 @@ a:active {
 
 .popup__registration-form-input {
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background: #ffffff !important;
   outline: none;
   width: 100%;

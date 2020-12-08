@@ -2,7 +2,7 @@
   <div class="popup">
     <div class="popup__close"></div>
     <h2 class="popup__header">AREA RISERVATA</h2>
-    <form class="popup__login-form" action="">
+    <form class="popup__login-form" action="post">
       <h3 class="popup__login-header">ACCEDI</h3>
       <label class="popup__login-form-label">
         <input class="popup__login-form-input popup__login-form-input-email" type="email" name="email"
@@ -15,7 +15,7 @@
       <button class="popup__login-form-btn" type="submit">ACCEDI</button>
       <a class="popup__login-form-reset-pass" href="#">Password dimenticata</a>
     </form>
-    <form class="popup__registration-form" action="">
+    <form class="popup__registration-form" action="post">
       <h3 class="popup__registration-header">REGISTRATI</h3>
       <label class="popup__registration-form-label">
         <input class="popup__registration-form-input popup__registration-form-input-name" type="text" name="name"
@@ -34,14 +34,16 @@
           name="user-pass" placeholder="Password">
       </label>
       <div class="popup__checkbox-wrap">
-        <input class="popup__registration-form-checkbox" type="checkbox" name="checkbox">
-        <label for="checkbox" class="popup__registration-form-label-checkbox">
+        <input class="popup__registration-form-checkbox" id="popup__registration-form-checkbox-1" type="checkbox"
+          name="checkbox">
+        <label for="popup__registration-form-checkbox-1" class="popup__registration-form-label-checkbox">
           Acconsento al trattamento dei dati
         </label>
       </div>
       <div class="popup__checkbox-wrap">
-        <input class="popup__registration-form-checkbox" type="checkbox" name="checkbox">
-        <label for="checkbox" class="popup__registration-form-label-checkbox">
+        <input class="popup__registration-form-checkbox" id="popup__registration-form-checkbox-2" type="checkbox"
+          name="checkbox">
+        <label for="popup__registration-form-checkbox-2" class="popup__registration-form-label-checkbox">
           Mi iscrivo alla Newsletter
         </label>
       </div>
