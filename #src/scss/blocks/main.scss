@@ -6,6 +6,8 @@
   flex-grow: 1;
   display: flex;
   overflow: hidden;
+
+  transition: background-image 0.5s;
 }
 
 .main__inner {

@@ -125,3 +125,40 @@ popupClose.addEventListener(
     );
   }
 );
+
+//slider
+
+const dotsItem1 = document.querySelector(
+    ".main__dots-item-1"
+  ),
+  dotsItem2 = document.querySelector(
+    ".main__dots-item-2"
+  ),
+  dotsItem3 = document.querySelector(
+    ".main__dots-item-3"
+  ),
+  main = document.querySelector(
+    ".main"
+  );
+
+dotsItem1.addEventListener(
+  "click",
+  () => {
+    main.style.backgroundImage =
+      "url('../img/bg-pic-1.jpg')";
+  }
+);
+dotsItem2.addEventListener(
+  "click",
+  () => {
+    main.style.backgroundImage =
+      "url('../img/bg-pic-2.jpg')";
+  }
+);
+dotsItem3.addEventListener(
+  "click",
+  () => {
+    main.style.backgroundImage =
+      "url('../img/bg-pic-3.jpg')";
+  }
+);

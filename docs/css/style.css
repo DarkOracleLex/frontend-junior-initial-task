@@ -533,6 +533,9 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  -webkit-transition: background-image 0.5s;
+  -o-transition: background-image 0.5s;
+  transition: background-image 0.5s;
 }
 
 .main__inner {
