@@ -628,6 +628,10 @@ a:active {
   background-color: #fff;
 }
 
+.main__dots-item-1 {
+  background-color: #e2d1a6;
+}
+
 .main__pull-out-menu-button {
   display: block;
   border: none;

@@ -146,6 +146,12 @@ dotsItem1.addEventListener(
   () => {
     main.style.backgroundImage =
       "url('img/bg-pic-1.jpg')";
+    dotsItem1.style.backgroundColor =
+      "#e2d1a6";
+    dotsItem2.style.backgroundColor =
+      "#fff";
+    dotsItem3.style.backgroundColor =
+      "#fff";
   }
 );
 dotsItem2.addEventListener(
@@ -153,6 +159,12 @@ dotsItem2.addEventListener(
   () => {
     main.style.backgroundImage =
       "url('img/bg-pic-2.jpg')";
+    dotsItem1.style.backgroundColor =
+      "#fff";
+    dotsItem2.style.backgroundColor =
+      "#e2d1a6";
+    dotsItem3.style.backgroundColor =
+      "#fff";
   }
 );
 dotsItem3.addEventListener(
@@ -160,5 +172,11 @@ dotsItem3.addEventListener(
   () => {
     main.style.backgroundImage =
       "url('img/bg-pic-3.jpg')";
+    dotsItem1.style.backgroundColor =
+      "#fff";
+    dotsItem2.style.backgroundColor =
+      "#fff";
+    dotsItem3.style.backgroundColor =
+      "#e2d1a6";
   }
 );
